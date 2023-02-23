@@ -12,7 +12,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 /* This will be our principal Module */
 @Module({
 
-  /* Importing our differents Modules, including also the root conecting with our DB on the mongodb online server */
+  /* Importing our differents Modules, including also the root conecting with our DB on the mongodb online server */ /* Url exposed temporaly */
   imports: [TaskModule, UserModule, MongooseModule.forRoot('mongodb+srv://moisesplatadev:5gzm8MzgV9ehrkOy@firstmongodb.hocbq8g.mongodb.net/?retryWrites=true&w=majority')],
  
   /* Controllers where we'll have all our routes available */
