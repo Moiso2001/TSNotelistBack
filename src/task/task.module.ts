@@ -11,7 +11,7 @@ import { taskSchema } from '../schema/task.schema';
     
     /* DataBase MongoDB declarations */
     imports: [MongooseModule.forFeature([
-        {name: 'Task', schema: taskSchema}
+        {name: 'task', schema: taskSchema}
     ])],
 
     /* Controllers where we'll have the routes available */

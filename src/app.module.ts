@@ -16,10 +16,10 @@ import { MongooseModule } from '@nestjs/mongoose';
   imports: [TaskModule, UserModule, MongooseModule.forRoot('mongodb+srv://moisesplatadev:5gzm8MzgV9ehrkOy@firstmongodb.hocbq8g.mongodb.net/?retryWrites=true&w=majority')],
  
   /* Controllers where we'll have all our routes available */
-  controllers: [AppController, TaskController, UserController],
+  controllers: [AppController],
 
   /* Providers working as the functionality to complement our controllers */
-  providers: [AppService, TaskService, UserService],
+  providers: [AppService]
 })
 
 /* This app module will be exported to our main.ts */
