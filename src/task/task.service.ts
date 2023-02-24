@@ -45,9 +45,10 @@ export class TaskService {
 
     /* Create task method to initialize and save a new task */
     async createTask(task: theTaskDto): Promise<Task | errorMessage>{
+        
         try {
 
-            if(!task.title || !task.completed){
+            if(!task.title || typeof task.completed === undefined){
                 return {message: "Missing important information"}
             }
 
